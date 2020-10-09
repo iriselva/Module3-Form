@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.form-container,
+.result-container {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px #ccc;
+    overflow: hidden;
+    width: 400px;
+    max-width: 100%;
+}
+
+.form {
+    padding: 30px 40px;
+}
+
+.header {
+    background-color: #ccc;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 20px 40px;
+}
+
+.header h2 {
+    margin: 0;
+}
+
+.form div {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form div label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form div input,
+textarea {
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    display: block;
+    font-family: sans-serif;
+    font-size: 14px;
+    width: 100%;
+    padding: 10px;
+}
+
+.form div textarea {
+    height: 140px;
+    resize: none;
+}
+
+.form div small {
+    visibility: hidden;
+    color: brown;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+button {
+    background-color: brown;
+    border: none;
+    color: white;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(116, 12, 12);
+}
+
+.form-div.error input, .form-div.error textarea {
+    border-color: brown;
+}
+
+.form-div.success input, .form-div.success textarea {
+    border-color: rgb(93, 167, 93);
+}
+
+.form-div.error small {
+    visibility: visible;
+}
+
+.result-div {
+    display: block;
+    font-family: sans-serif;
+    line-height: 40px;
+    width: 100%;
+    padding: 20px;
+}
+
+.result-div div {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
