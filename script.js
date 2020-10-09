@@ -97,3 +97,4 @@ const isMessageValid = messageValue => messageValue.length >= 10 && messageValue
 function isEmailValid(email) {
     return /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/.test(email);
 }
+
